@@ -4,83 +4,80 @@
 	box-sizing: border-box;
 }
 
-html {
-	/* What does this do? Do I need it? */
-	height: 100%;
-}
-
 body {
 	width: 100%;
 	margin: 0;
-	padding: 0;
-	perspective: 1px;
-  	transform-style: preserve-3d;
-  	height: 100%;
-  	overflow-y: scroll;
-  	overflow-x: hidden;
-  	font-family: Nunito;
 }
 
-.grid {
-	position: relative;
-	padding: 25vh 10%;
-	min-height: 100vh;
-	width: 100vw;
-	transform-style: inherit;
-}
-
-.grid:before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.title {
-	width: 50%;
-	padding: 5%;
-	border-radius: 6px;
-	background: #88B14B;
+.parallax-1 {
+	background-image: url("../img/img_a.jpg");
+	min-height: 600px;
 	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.grid:nth-child(2n), .title {
-	margin-left: 0;
-	margin-right: auto;
+.parallax-2 {
+	background-image: url("../img/img_b.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;	
 }
 
-.grid:nth-child(2n+1), .title {
-	margin-left: auto;
-	margin-right: 0;
+.parallax-3 {
+	background-image: url("../img/img_c.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.grid, .grid:before {
-	background: 50% 50% / cover;
+.slide {
+	background-color: #ffffff;
+	height: 600px;
 }
 
-.grid-header {
+.slide-head {
+	background-color: #ffffff;
+	height: 100px;
 	text-align: center;
 }
 
-#grid-1:before {
-	background: #97D5E0;
-	transform: translateZ(-1px) scale(2);
-	z-index: -1;
-}	
-
-#grid-2 {
-	background: #EFCEC5;
-	background-attachment: fixed;
+.post-it-1 {
+	float:left;
+	width: 30%;
+	height: 40%;
+	margin: 5%;
+	padding: 8% 3%;
+	border-radius: 5px;
+	background: #89ACC2;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-#grid-3 {
-	background: #000000;
-	transform: translateZ(-1px) scale(2);
-	z-index: -1;
+.meet-text {
+	float: right;
+	width:50%;
+	padding: 5%;
+	margin: 0% 5%;
+	font-size: 1.4em;
 }
 
-#grid-4 {
-	background: #ffffff;
+.post-it-2 {
+	float: right;
+	width: 30%;
+	height: 40%;
+	margin: 5%;
+	padding: 8% 3%;
+	border-radius: 5px;
+	background-color: #6FA2AF;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .7); 
+}
+
+.post-it-heading {
+	text-align: center;
+	color: #FFFFFF;
 }
